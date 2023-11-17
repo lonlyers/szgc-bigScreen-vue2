@@ -8,14 +8,20 @@
   </div>
 </template>
 <script>
-import autofit from 'autofit.js'
+import autofit from "autofit.js";
+
 export default {
+  data() {
+    return {
+      goss: "1",
+    };
+  },
   mounted() {
     autofit.init(
       {
         dh: 1080,
         dw: 1920,
-        el: 'body',
+        el: "body",
         resize: true,
       },
       false
