@@ -7,7 +7,22 @@
     <router-view />
   </div>
 </template>
-
+<script>
+import autofit from 'autofit.js'
+export default {
+  mounted() {
+    autofit.init(
+      {
+        dh: 1080,
+        dw: 1920,
+        el: 'body',
+        resize: true,
+      },
+      false
+    ); // You can disable console prompt output
+  },
+};
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
