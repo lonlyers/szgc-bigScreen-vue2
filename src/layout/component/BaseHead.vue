@@ -1,7 +1,6 @@
 <template>
   <div class="head-box">
     {{ projectTit }}
-
   </div>
 </template>
 
@@ -30,6 +29,5 @@ export default {
   font-family: PangMenZhengDao-3;
   font-size: 40px;
   color: #ffffff;
-
 }
 </style>

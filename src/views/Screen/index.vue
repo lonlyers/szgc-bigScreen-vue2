@@ -1,19 +1,35 @@
 <template>
-    <div class="index-container">
-
+  <div class="index-container">
+    <div class="left">
+      <gcgk />
+      <xctj />
     </div>
+    <div class="right"></div>
+  </div>
 </template>
 
 <script>
-    export default {
-
-    }
+import gcgk from './left/gcgk'
+import xctj from './left/xctj'
+export default {
+  components: { gcgk, xctj }
+}
 </script>
 
 <style lang="less" scoped>
-.index-container{
-    padding:0 15px;
-    padding-top:80px;
-    padding-bottom:58px;
+.index-container {
+  position: relative;
+  .left {
+    position: absolute;
+    left: 15px;
+    top: 80px;
+    width: 381px;
+  }
+  .right {
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    width: 381px;
+  }
 }
 </style>

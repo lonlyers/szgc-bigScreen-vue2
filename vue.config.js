@@ -12,5 +12,19 @@ module.exports = defineConfig({
         // pathRewrite: { '^/drsp-auth': '' }
       }
     }
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        postcssOptions: {
+          plugins: {
+            'postcss-pxtorem': {
+              rootValue: 16,
+              propList: ['*']
+            }
+          }
+        }
+      }
+    }
   }
 })

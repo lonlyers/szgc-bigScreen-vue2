@@ -13,7 +13,6 @@ export default {
       if (val) {
         this.$router.push('/screen')
         this.$message.success('登录成功')
-        console.log(this.$router)
       }
     })
   }

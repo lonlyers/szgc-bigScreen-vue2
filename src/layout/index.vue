@@ -1,7 +1,7 @@
 <template>
   <div class="layout-container">
-    <BaseHead/>
-    <BaseFooter/>
+    <BaseHead />
+    <BaseFooter />
     <img
       class="left-zs"
       src="~@/assets/imgs/layout/zs-left-top.png"
@@ -30,12 +30,12 @@ export default {
   background-image: url('~@/assets/imgs/layout/mask.png');
   background-size: 100% 100%;
   position: relative;
-  .right-zs{
+  .right-zs {
     position: absolute;
     top: 14px;
     right: 17px;
   }
-  .left-zs{
+  .left-zs {
     position: absolute;
     top: 14px;
     left: 17px;
